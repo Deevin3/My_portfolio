@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: fixed;
   align-items: center;
 }
 
@@ -32,7 +32,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: black   /*#1A1A40; */ ;
+  background: rgb(30, 30, 30)   /*#1A1A40; */ ;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
