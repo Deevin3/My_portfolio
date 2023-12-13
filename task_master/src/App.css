@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@media (max-width: 414px) {
-  
+@media (max-width: 400px) and (max-width: 606px) {
+  .body {
+    background-image: url(images/desk-workspace-with-various-elements.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    border-bottom:1px;
+  }
 }
 
 * {
@@ -13,7 +18,7 @@
 body {
   /* background: #8758ff; */
   background-image: url(images/desk-workspace-with-various-elements.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
   display: flex;
