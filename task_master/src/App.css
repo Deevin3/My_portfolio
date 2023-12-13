@@ -13,7 +13,7 @@
 body {
   /* background: #8758ff; */
   background-image: url(images/desk-workspace-with-various-elements.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: fixed;
   display: flex;
