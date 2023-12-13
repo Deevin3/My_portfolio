@@ -15,9 +15,9 @@ body {
   background-image: url(images/desk-workspace-with-various-elements.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: fixed;
   display: flex;
-  justify-content: fixed;
+  justify-content: center;
   align-items: center;
 }
 
