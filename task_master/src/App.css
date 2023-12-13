@@ -8,7 +8,8 @@
 }
 
 body {
-  background: #8758ff;
+  /* background: #8758ff; */
+  background-image: url(images/desk-workspace-with-various-elements.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
