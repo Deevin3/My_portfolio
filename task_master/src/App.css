@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@media (max-width: 414px) {
+  
+}
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -10,7 +13,9 @@
 body {
   /* background: #8758ff; */
   background-image: url(images/desk-workspace-with-various-elements.jpg);
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +32,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #f8f8ff    /*#1A1A40; */ ;
+  background: black   /*#1A1A40; */ ;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
