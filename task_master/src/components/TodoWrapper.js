@@ -1,44 +1,22 @@
-import React, {useState} from 'react';
-import { todo } from './Todo';
-import { TodoForm } from './TodoForm';
-import { v4 as uuidv4 } from 'uuid';
-import { EditTodoForm } from './EditTodoForm';
+import React, {useState} from 'react'
 
-export const TodoWrapper = () => {
-       const [todos, setTodos] = useState([]);
-       
-       const addTodo = todo => {
-        setTodos([...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false},]);
-       }
+export const TodoForm = ({addTodo}) => {
+    const [value, setValue] = useState('');
 
-       const toggleComplete = id => {
-        setTodos(todos.map((todo) => todo.id === id ? {...todo, completed: !todo.completed} : todo));
-       }
-
-       const deleteTodo = (id) => {
-        setTodos(todos.filter((todo) => todo.id !== id));
-       }
-
-       const editTodo = id => {
-        setTodos(todos.map((todo) => todo.id === id ? {...todo, isEditing: !todo.isEditing} : todo));
-       }
-
-       const editTask = (task, id) => {
-        setTodos(todos.map((todo) => todo.id === id ? {...todo, task, isEditing: !todo.isEditing} : todo));
-       };
-    return (
-        <div className='TodoWrapper'>
-            <h1>Task Master</h1>
-            <TodoForm addTodo={addTodo} />
-            {/* display todos */}
-            {todos.map((todo) => 
-                todo.isEditing ? (
-                    <EditTodoForm editTodo={editTask} task={todo}/>
-                ) : (
-                    <todo task={todo} key={todo.id} toggleComplete={toggleComplete} 
-                 deleteTodo={deleteTodo} editTodo={editTodo} />
-                )
-            )}
-        </div>
-    );
-};
+    const handleSubmit = (e) => {
+      // prevent default action
+        e.preventDefault();
+        if (value) {
+          // add todo
+          addTodo(value);
+          // clear form after submission
+          setValue('');
+        }
+      };
+  return (
+    <form onSubmit={handleSubmit} className="TodoForm">
+    <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="todo-input" placeholder='What is the task today?' />
+    <button type="submit" className='todo-btn'>Add Task</button>
+  </form>
+  )
+}
