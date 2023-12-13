@@ -10,7 +10,7 @@
 body {
   /* background: #8758ff; */
   background-image: url(images/desk-workspace-with-various-elements.jpg);
-  background-size: 50%;
+  background-size: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #1A1A40;
+  background: #f8f8ff    /*#1A1A40; */ ;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
