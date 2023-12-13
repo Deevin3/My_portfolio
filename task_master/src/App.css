@@ -10,6 +10,7 @@
 body {
   /* background: #8758ff; */
   background-image: url(images/desk-workspace-with-various-elements.jpg);
+  background-size: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
