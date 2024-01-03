@@ -5,9 +5,9 @@ The Task Master was built for who people are always busy and tend to forget or s
 
 # Technologies used 
 
- React
- scss
- jsx
-vercel
+ React,
+ scss,
+ jsx,
+vercel.
 
 ### To view the website click on this link: https://my-portfolio-task-master-13.vercel.app/
