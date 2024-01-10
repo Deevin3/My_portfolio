@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 
-export const TodoForm = ({addTodo}) => {
+function  TodoForm  ({addTodo})  {
     const [value, setValue] = useState('');
 
     const handleSubmit = (e) => {
-      // prevent default action
+      //to prevent default action of reloading
         e.preventDefault();
         if (value) {
-          // add todo
+          // to add todo
           addTodo(value);
           // clear form after submission
           setValue('');
@@ -20,3 +20,4 @@ export const TodoForm = ({addTodo}) => {
   </form>
   )
 }
+export default TodoForm;
