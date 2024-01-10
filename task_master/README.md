@@ -6,7 +6,7 @@ The Task Master was built for who people are always busy and tend to forget or s
 # Technologies used 
 
  React,
- scss,
+ css,
  jsx,
 vercel.
 
